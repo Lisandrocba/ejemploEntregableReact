@@ -1,3 +1,5 @@
+/* Arreglo con la lista de productos */
+
 const products = [
     {
         id: 1,
@@ -29,6 +31,8 @@ const products = [
     },
 ]
 
+/* Funcion get que devuelve la lista de productos completa */
+
 export const getDataProducts = async()=>{
     return new Promise((resolve)=>{
         setTimeout(() => {
@@ -36,6 +40,8 @@ export const getDataProducts = async()=>{
         },1000)
     })
 }
+
+/* funcion get que devuelve un producto por su id */
 
 export const getDataProductId = (id)=>{
     return new Promise((resolve)=>{

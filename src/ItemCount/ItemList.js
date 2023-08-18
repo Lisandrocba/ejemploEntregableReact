@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 const ItemList = ({initial, stock}) => {
     let [products, setProducts] = useState([])
 
+    /* carga de datos al cargar el render, la funcion se encuentra dentro del archivo data.js */
    useEffect(()=>{
     const cargaData=async()=>{
         setProducts(await getDataProducts())
